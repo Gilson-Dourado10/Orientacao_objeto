@@ -22,10 +22,6 @@ static void Main()
         carro.Desligar();
         carro.EmMovimento = false;
         Console.WriteLine($"Carro Em Movimento: {carro.EmMovimento}");
-
-        
-
-
        }
     }
 }
