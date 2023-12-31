@@ -10,12 +10,15 @@ namespace Orientacao_objetos
         public string Modelo;
         public string Cor;
         public int Ano;
+        public bool EmMovimento;
 
         public void Ligar()
         {
-            Console.WriteLine("Carro ligado");
-
+            Console.WriteLine("Carro Ligado");
         }
-
+        public void Desligar()
+        {
+            Console.WriteLine("Carro desligado");
+        }
     }
 }
