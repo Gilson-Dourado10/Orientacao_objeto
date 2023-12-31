@@ -9,7 +9,7 @@ namespace Orientacao_objetos
     {
         public string Modelo;
         public string Cor;
-        public int ANO;
+        public int Ano;
 
         public void Ligar()
         {
