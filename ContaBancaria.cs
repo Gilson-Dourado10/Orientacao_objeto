@@ -11,8 +11,8 @@ namespace Orientacao_objetos
         public double Saldo;
         public double Depositar(double valor)
         {
-           Console.WriteLine($"O valor depositado foi: {valor}"); 
-            return valor;
+            Saldo =+ valor;
+           Console.WriteLine($"O valor depósito de  {valor} realizado com sucesso."); 
         }
         public double Sacar(double valor)
         {
