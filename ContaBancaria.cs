@@ -1,29 +1,29 @@
-using System;
-namespace Orientacao_objetos
-{
-    public class ContaBancaria
-    {
-        public string Titular;
-        public double Saldo;
-        public void Sacar(double valor)
-        {
-            if (Saldo >= valor)
-            {
-                Saldo -= valor;
-                Console.WriteLine($"saque realizado sucesso no valor: {valor}");
-            }
-            else
-            {
-                Console.WriteLine($"saldo insuficiente para o saque no valor: {valor}");
-            }
-        }
-        public void Depositar(double valor)
-        {
-            Saldo += valor;
-            Console.WriteLine($"O valor depósitado é: {valor} ");
-        }
-    }   
-}    
+// using System;
+// namespace Orientacao_objetos
+// {
+//     public class ContaBancaria
+//     {
+//         public string Titular;
+//         public double Saldo;
+//         public void Sacar(double valor)
+//         {
+//             if (Saldo >= valor)
+//             {
+//                 Saldo -= valor;
+//                 Console.WriteLine($"saque realizado sucesso no valor: {valor}");
+//             }
+//             else
+//             {
+//                 Console.WriteLine($"saldo insuficiente para o saque no valor: {valor}");
+//             }
+//         }
+//         public void Depositar(double valor)
+//         {
+//             Saldo += valor;
+//             Console.WriteLine($"O valor depósitado é: {valor} ");
+//         }
+//     }
+// }
 
 
 
@@ -36,26 +36,19 @@ namespace Orientacao_objetos
 //         public string Titular;
 //         public double Saldo;
 
-//         public double Depositar(double valor)
-//         {
-//             Saldo += valor;
-//             Console.WriteLine($"Depósito de {valor} realizado com sucesso.");
-//             return Saldo; // Retorna o novo saldo após o depósito
-//         }
+using System;
+namespace Orientacao_objetos
+{
+    class ContaBancaria
+    {
+        public string NomeTitular;
+        public double SaldoTitular;
 
-//         public void Sacar(double valor)
-//         {
-//             if (Saldo >= valor)
-//             {
-//                 Saldo -= valor;
-//                 Console.WriteLine($"Saque de {valor} realizado com sucesso.");
-//             }
-//             else
-//             {
-//                 Console.WriteLine($"Saldo insuficiente para saque de {valor}.");
-//             }
-//         }
-//     }
-
-    
-// }
+        public double DepositarValor(double valor)
+        {
+            SaldoTitular += valor;
+            Console.WriteLine($"Depósito na conta de {NomeTitular} no valor de: {valor}");
+            return SaldoTitular;
+        }
+    }
+}

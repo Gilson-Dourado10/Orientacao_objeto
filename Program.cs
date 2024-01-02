@@ -1,8 +1,8 @@
 
-namespace Orientacao_objetos
-{
-class Orientacao_objetos
-    {
+// namespace Orientacao_objetos
+// {
+// class Orientacao_objetos
+//     {
 // static void Main()
 //        {
 //          Console.Clear();
@@ -33,22 +33,27 @@ class Orientacao_objetos
 //        // Console.WriteLine($"Novo saldo após saque: {contaBancaria.Sacar}");
         
 //        }
+namespace Orientacao_objetos
+{
+class Orientacao_objetos
+    {
 class Program
     {
         static void Main()
         {
+            Console.Clear();
             ContaBancaria contaBancaria = new ContaBancaria();
-            contaBancaria.Titular = "Pedro Sampaio";
-            contaBancaria.Saldo = 300;
+            contaBancaria.NomeTitular = "Pedro Sampaio";
+            contaBancaria.SaldoTitular = 200;
 
-            Console.WriteLine($"Titular: {contaBancaria.Titular}");
-            Console.WriteLine($"Saldo: {contaBancaria.Saldo}");
+            Console.WriteLine($"Titular: {contaBancaria.NomeTitular}");
+            Console.WriteLine($"Saldo: {contaBancaria.SaldoTitular}");
 
-            contaBancaria.Depositar(100);
-            Console.WriteLine($"Novo Saldo após depósito: {contaBancaria.Saldo}");
+            contaBancaria.DepositarValor(100);
+            Console.WriteLine($"Novo Saldo após depósito: {contaBancaria.SaldoTitular}");
 
-            contaBancaria.Sacar(500);
-            Console.WriteLine($"Novo Saldo após saque: {contaBancaria.Saldo}");
+            // contaBancaria.Sacar(500);
+            // Console.WriteLine($"Novo Saldo após saque: {contaBancaria.Saldo}");
             
         }
     }
