@@ -49,11 +49,11 @@ class Program
             Console.WriteLine($"Titular: {contaBancaria.NomeTitular}");
             Console.WriteLine($"Saldo: {contaBancaria.SaldoTitular}");
 
-            contaBancaria.DepositarValor(100);
-            Console.WriteLine($"Novo Saldo após depósito: {contaBancaria.SaldoTitular}");
+            double valorDepositado = contaBancaria.DepositarValor(100);
+            Console.WriteLine($"Novo Saldo após depósito: {valorDepositado}");
 
-            // contaBancaria.Sacar(500);
-            // Console.WriteLine($"Novo Saldo após saque: {contaBancaria.Saldo}");
+            double novoSaldo = contaBancaria.SacarValor(290);
+            Console.WriteLine($"Novo Saldo após saque: {contaBancaria.SaldoTitular}");
             
         }
     }

@@ -50,5 +50,19 @@ namespace Orientacao_objetos
             Console.WriteLine($"Depósito na conta de {NomeTitular} no valor de: {valor}");
             return SaldoTitular;
         }
+        public double SacarValor(double valor)
+        {
+            if (SaldoTitular >= valor)
+            {
+                SaldoTitular -= valor;
+                Console.WriteLine($"O saque no valor {valor} foi realizado com sucesso.!");
+                return valor;
+            }
+            else
+            {
+                Console.WriteLine($"Saldo insuficiente para o saque no valor de {valor}");
+            }
+                return 0;
+        }
     }
 }
