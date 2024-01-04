@@ -33,6 +33,36 @@
 //        // Console.WriteLine($"Novo saldo após saque: {contaBancaria.Sacar}");
         
 //        }
+
+
+// MAIN COM MÉTODO COM RETORNO DE VALOR
+// namespace Orientacao_objetos
+// {
+// class Orientacao_objetos
+//     {
+// class Program
+//     {
+//         static void Main()
+//         {
+//             Console.Clear();
+//             ContaBancaria contaBancaria = new ContaBancaria();
+//             contaBancaria.NomeTitular = "Pedro Sampaio";
+//             contaBancaria.SaldoTitular = 200;
+
+//             Console.WriteLine($"Titular: {contaBancaria.NomeTitular}");
+//             Console.WriteLine($"Saldo: {contaBancaria.SaldoTitular}");
+
+//             double valorDepositado = contaBancaria.DepositarValor(100);
+//             Console.WriteLine($"Novo Saldo após depósito: {valorDepositado}");
+
+//             double novoSaldo = contaBancaria.SacarValor(290);
+//             Console.WriteLine($"Novo Saldo após saque: {contaBancaria.SaldoTitular}");
+            
+//         }
+//     }
+//    }
+// }
+
 namespace Orientacao_objetos
 {
 class Orientacao_objetos
@@ -43,17 +73,17 @@ class Program
         {
             Console.Clear();
             ContaBancaria contaBancaria = new ContaBancaria();
-            contaBancaria.NomeTitular = "Pedro Sampaio";
-            contaBancaria.SaldoTitular = 200;
+            contaBancaria.Titular = "Moisés Lucas";
+            contaBancaria.Saldo = 200;
 
-            Console.WriteLine($"Titular: {contaBancaria.NomeTitular}");
-            Console.WriteLine($"Saldo: {contaBancaria.SaldoTitular}");
+            Console.WriteLine($"Titular: {contaBancaria.Titular}");
+            Console.WriteLine($"Saldo: {contaBancaria.Saldo}");
 
-            double valorDepositado = contaBancaria.DepositarValor(100);
-            Console.WriteLine($"Novo Saldo após depósito: {valorDepositado}");
+            contaBancaria.Depositar(100);
+            Console.WriteLine($"Novo Saldo após depósito: {contaBancaria.Saldo}");
 
-            double novoSaldo = contaBancaria.SacarValor(290);
-            Console.WriteLine($"Novo Saldo após saque: {contaBancaria.SaldoTitular}");
+             contaBancaria.Sacar(290);
+            Console.WriteLine($"Novo Saldo após saque: {contaBancaria.Saldo}");
             
         }
     }
