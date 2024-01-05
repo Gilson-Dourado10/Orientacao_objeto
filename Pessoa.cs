@@ -8,9 +8,7 @@ namespace Orientacao_objetos
             get => nomeCompleto;
             set=> nomeCompleto = value;
         }
-        public string Profissão {get;set;}
+        public string Profissao {get;set;}
         public int Idade {get;set;}
-        
-
     }
 }
