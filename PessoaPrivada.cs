@@ -24,14 +24,30 @@ namespace Orientacao_objetos
         }
         public string Profissao
         {
-            get => sobrenome;
-            set => sobrenome = value;
+            get => profissao;
+            set => profissao = value;
         }
         public int Idade
         {
             get => idade;
             set => idade = value;
         }
-    
+        private string ObterNomeCompleto()
+        {
+            return$" {nome}  {sobrenome}";
+        }
+        private void ExibirMensagemPrivada()
+        {
+            Console.WriteLine("Essa é uma mensagem privada");
+        }
+        public void ExibirInformacoes()
+        {
+            string nomeCompleto = ObterNomeCompleto();
+            ExibirMensagemPrivada();
+            Console.WriteLine($"Nome completo: {nomeCompleto}");
+            Console.WriteLine($"Profissão: {Profissao}");
+            Console.WriteLine($"Idade: {Idade}");
+        }
     }
+
 }
