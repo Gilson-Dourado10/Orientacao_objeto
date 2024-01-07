@@ -19,4 +19,8 @@
 // pessoaPrivada.ExibirInformacoes();
 //****************************************************************************************
 using Orientacao_objetos;
+ContaPoupanca cp = new ContaPoupanca;
+cp.Depositar(500);
+cp.Sacar(1000);
+
 
