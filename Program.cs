@@ -9,11 +9,14 @@
 // Console.WriteLine($"Profissão : {p1.Profissao}");
 
 //************************************************************************
+// using Orientacao_objetos;
+// Console.Clear();
+// PessoaPrivada pessoaPrivada = new PessoaPrivada();
+// pessoaPrivada.Nome= "Geraldo";
+// pessoaPrivada.Sobrenome= "Dos Santos";
+// pessoaPrivada.Profissao = "Gerente de software";
+// pessoaPrivada.Idade = 38;
+// pessoaPrivada.ExibirInformacoes();
+//****************************************************************************************
 using Orientacao_objetos;
-Console.Clear();
-PessoaPrivada pessoaPrivada = new PessoaPrivada();
-pessoaPrivada.Nome= "Geraldo";
-pessoaPrivada.Sobrenome= "Dos Santos";
-pessoaPrivada.Profissao = "Gerente de software";
-pessoaPrivada.Idade = 38;
-pessoaPrivada.ExibirInformacoes();
+

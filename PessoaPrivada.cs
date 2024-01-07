@@ -31,14 +31,17 @@ namespace Orientacao_objetos
         {
             get => idade;
             set => idade = value;
+            
         }
         private string ObterNomeCompleto()
         {
             return$" {nome}  {sobrenome}";
+            
         }
         private void ExibirMensagemPrivada()
         {
             Console.WriteLine("Essa é uma mensagem privada");
+            
         }
         public void ExibirInformacoes()
         {
