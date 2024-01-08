@@ -18,9 +18,42 @@
 // pessoaPrivada.Idade = 38;
 // pessoaPrivada.ExibirInformacoes();
 //****************************************************************************************
-using Orientacao_objetos;
-ContaPoupanca cp = new ContaPoupanca;
-cp.Depositar(500);
-cp.Sacar(1000);
+// using Orientacao_objetos;
+//  class Program
+// {
+//     static void Main()
+//     {
+//         Console.Clear();
+//         // Criando uma instância da classe ContaBancaria
+//         ContaBancaria conta = new ContaBancaria();
 
+//         // Exibindo saldo inicial
+//         Console.WriteLine($"Saldo Inicial: {conta.Saldo}");
+
+//         // Realizando depósito
+//         conta.Depositar(1000);
+
+//         // Exibindo saldo após depósito
+//         Console.WriteLine($"Saldo após Depósito: {conta.Saldo}");
+
+//         // Realizando saque
+//         conta.Sacar(500);
+
+//         // Exibindo saldo após saque
+//         Console.WriteLine($"Saldo após Saque: {conta.Saldo}");
+
+//         // Aguarda a entrada do usuário antes de fechar a aplicação
+//         Console.ReadLine();
+//     }
+// }
+
+//*******************************************************************************************************************************************
+using Orientacao_objetos;
+Console.Clear();
+ContaPoupanca cp = new ContaPoupanca();
+Console.WriteLine($"Saldo inicial da conta poupança: {cp.Saldo}");
+cp.Depositar(300);
+Console.WriteLine($"Saldo após deposito: {cp.Saldo}");
+cp.Sacar(300);
+Console.WriteLine($"Saldo após o saque: {cp.Saldo}");
 

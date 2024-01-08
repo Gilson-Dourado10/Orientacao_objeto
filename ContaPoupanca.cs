@@ -10,26 +10,60 @@ namespace Orientacao_objetos
         private double saldo;
         public double Saldo
         {
-            get => saldo;
-            private set  => saldo = value;
+            // get => saldo;
+            // private set  => saldo = value;
+        
+        get { return saldo; }
+        private set { saldo = value; } 
         }
-        // get { return saldo; }
-        // private set { saldo = value; } 
-    }
-    public void Depositar(double valor)
-    {
-        Saldo += valor;
-    }
-    public void Sacar(double valor)
-    {
-        if (valor <= Saldo )
+        public void Depositar(double valor)
         {
-            Saldo -= valor;
-            Console.WriteLine($"O saque de de valor: R$ {valor} realizado com sucesso.");
+            Saldo += valor;
         }
-        else
+        public void Sacar(double valor)
         {
-            Console.WriteLine($"Saldo insuficiente para o saque de valor R${valor}");
+            if (valor <= Saldo)
+            {
+                Saldo -= valor;
+            }
+            else
+            {
+                Console.WriteLine($"Saldo insuficiente para o saque de valor {valor}");
+            }
         }
     }
+
+   
 }
+
+//**********************************************************************************************************
+//     using System;
+
+//     public class ContaBancaria
+//     {
+//         private double saldo;  // Atributo privado
+
+//         public double Saldo   // Propriedade pública com encapsulamento
+//         {
+//             get { return saldo; }
+//             private set { saldo = value; }
+//         }
+
+//         public void Depositar(double valor)
+//         {
+//             // Lógica de depósito com encapsulamento
+//             Saldo += valor;
+//         }
+
+//         public void Sacar(double valor)
+//         {
+//             // Lógica de saque com encapsulamento
+//             if (valor <= Saldo)
+//                 Saldo -= valor;
+//             else
+//                 Console.WriteLine("Saldo insuficiente para saque.");
+//         }
+//     }
+
+// }
+//**********************************************************************************************************************************************
