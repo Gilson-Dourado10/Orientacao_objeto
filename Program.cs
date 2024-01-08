@@ -48,12 +48,29 @@
 // }
 
 //*******************************************************************************************************************************************
-using Orientacao_objetos;
-Console.Clear();
-ContaPoupanca cp = new ContaPoupanca();
-Console.WriteLine($"Saldo inicial da conta poupança: {cp.Saldo}");
-cp.Depositar(300);
-Console.WriteLine($"Saldo após deposito: {cp.Saldo}");
-cp.Sacar(300);
-Console.WriteLine($"Saldo após o saque: {cp.Saldo}");
+// using Orientacao_objetos;
+// Console.Clear();
+// ContaPoupanca cp = new ContaPoupanca();
+// Console.WriteLine($"Saldo inicial da conta poupança: {cp.Saldo}");
+// cp.Depositar(300);
+// Console.WriteLine($"Saldo após deposito: {cp.Saldo}");
+// cp.Sacar(310);
+// Console.WriteLine($"Saldo após o saque: {cp.Saldo}");
 
+//*************************************************************************************
+/*
+Suponha que você esteja desenvolvendo um sistema para gerenciar 
+informações sobre estudantes em uma escola. Crie uma 
+classe Estudante com os seguintes requisitos:
+
+A classe deve ter atributos privados para o nome do estudante, a idade e a nota média.
+Utilize métodos get e set para encapsular o acesso a esses atributos.
+Crie um método público chamado ExibirInformacoes que exibe o nome, 
+a idade e a nota média do estudante.
+Implemente validações nos métodos set para garantir que a idade seja um valor
+ não negativo e que a nota média esteja no intervalo de 0 a 10.
+*/
+// using Orientacao_objetos;
+
+// Estudante estudante = new Estudante();
+// estudante.ExibirInformacoes();
