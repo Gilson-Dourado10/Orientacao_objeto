@@ -70,7 +70,10 @@ a idade e a nota média do estudante.
 Implemente validações nos métodos set para garantir que a idade seja um valor
  não negativo e que a nota média esteja no intervalo de 0 a 10.
 */
-// using Orientacao_objetos;
-
-// Estudante estudante = new Estudante();
-// estudante.ExibirInformacoes();
+using Orientacao_objetos;
+Console.Clear();
+Estudante estudante = new Estudante();
+estudante.Nome = "João pedro";
+estudante.Idade = 38;
+estudante.NotaMedia = 7;
+estudante.ExibirInformacoes();

@@ -3,7 +3,7 @@ namespace Orientacao_objetos
 {
     public class Estudante
     {
-        private string nome
+        private string nome;
       private int idade;
         private double notaMedia;
 
