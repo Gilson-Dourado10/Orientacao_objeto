@@ -33,8 +33,8 @@ namespace Orientacao_objetos
             Console.Clear();
             Circulo circulo = new Circulo();
             circulo.Raio = 5;
-            Quadrado quadrado = new Quadrado();
-            quadrado.Lado = 4;
+            Quadrado quadrado = new Quadrado{Lado = 5};
+            //quadrado.Lado = 4;
             Console.WriteLine($"Area do circulo: {quadrado.CalcularArea()}");
             Console.WriteLine($"Area do quadrado: {circulo.CalcularArea()}");
         }
