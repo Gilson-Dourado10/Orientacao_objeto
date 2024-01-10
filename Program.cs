@@ -1,42 +1,10 @@
-          
-// HERANÇA
 
-// namespace Orientacao_objetos
-// {
-//     class Program
-//     {
-//         static void Main()
-//         {
-//             Gato gato = new Gato();
-//             gato.Nome = "Xanuca";
-//             Console.WriteLine($"Nome do gato: {gato.Nome}");
-//             gato.EmitirSom();
-//             gato.Miar();
-//         }
-//     }
-// }
-//****************************************************************************
 /*
-Exercício
-Exercício Fácil - Herança:
+Exercício Médio - Herança:
 
-Considere uma hierarquia de classes para representar formas geométricas.
- A classe base é Forma, e as subclasses incluem Circulo e Quadrado.
- Cada forma tem uma propriedade de área.
+Considere uma hierarquia de classes para representar veículos. 
+A classe base é Veiculo,
+ e as subclasses incluem Carro e Moto. 
+ Cada veículo tem propriedades como modelo, cor e método para ligar.
 */
-namespace Orientacao_objetos
-{
-    class FormasGeometricas
-    {
-        static void Main()
-        {
-            Console.Clear();
-            Circulo circulo = new Circulo();
-            circulo.Raio = 5;
-            Quadrado quadrado = new Quadrado{Lado = 5};
-            //quadrado.Lado = 4;
-            Console.WriteLine($"Area do circulo: {quadrado.CalcularArea()}");
-            Console.WriteLine($"Area do quadrado: {circulo.CalcularArea()}");
-        }
-    }
-}
+using System;
