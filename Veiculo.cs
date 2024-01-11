@@ -9,9 +9,9 @@ namespace Orientacao_objetos
     {
         public string modelo { get; set; }
         public string cor { get; set; }
-        public void Ligar()
+        public virtual void Ligar()
         {
-            Console.WriteLine("carro ligado");
+            Console.WriteLine("Veiculo ligado");
         }
 
     }
