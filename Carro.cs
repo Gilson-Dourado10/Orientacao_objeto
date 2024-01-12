@@ -5,20 +5,12 @@ using System.Threading.Tasks;
 
 namespace Orientacao_objetos
 {
-    public class Carro
+    public class Carro :  Veiculo
     {
-        public string Modelo;
-        public string Cor;
-        public int Ano;
-        public bool EmMovimento;
-
-        public void Ligar()
+        public int numeroPortas{ get; set; }  
+        public override void Ligar()
         {
-            Console.WriteLine("Carro Ligado");
-        }
-        public void Desligar()
-        {
-            Console.WriteLine("Carro desligado");
+            Console.WriteLine("Carro ligado");
         }
     }
 }
