@@ -12,6 +12,9 @@ namespace Orientacao_objetos
         private string Modelo;
         public int Tanque { get; set ; }
         public static int VeiculosAbastecidos{get; private set; }
-
+    }
+    public Posto(string proprietario)
+    {
+        Proprietario = proprietario;
     }
 }
