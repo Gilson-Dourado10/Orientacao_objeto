@@ -1,112 +1,79 @@
 
-// namespace Orientacao_objetos
+//using Orientacao_objetos;
+// Pessoa p1 = new Pessoa();
+// p1.NomeCompleto = "Apóstolo Paulo de tarso";
+// p1.Idade = 38;
+// p1.Profissao = "Programador jr C#";
+// Console.WriteLine($"Nome completo: {p1.NomeCompleto}");
+// Console.WriteLine($"Idade: {p1.Idade}");
+// Console.WriteLine($"Profissão : {p1.Profissao}");
+
+//************************************************************************
+// using Orientacao_objetos;
+// Console.Clear();
+// PessoaPrivada pessoaPrivada = new PessoaPrivada();
+// pessoaPrivada.Nome= "Geraldo";
+// pessoaPrivada.Sobrenome= "Dos Santos";
+// pessoaPrivada.Profissao = "Gerente de software";
+// pessoaPrivada.Idade = 38;
+// pessoaPrivada.ExibirInformacoes();
+//****************************************************************************************
+// using Orientacao_objetos;
+//  class Program
 // {
-// class Orientacao_objetos
+//     static void Main()
 //     {
-// static void Main()
-//        {
-//          Console.Clear();
-//         // Carro carro = new Carro();
-//         // carro.Modelo = "Corsa hatch";
-//         // carro.Cor = "Prata";
-//         // carro.Ano = 2008;
-//         // carro.EmMovimento = false;
-//         // carro.Ligar(); 
-//         // Console.WriteLine($"Carro Em Movimento: {carro.EmMovimento}");
-//         // Console.WriteLine($"Modelo: {carro.Modelo}");
-//         // Console.WriteLine($"Cor: {carro.Cor}");
-//         // Console.WriteLine($"Ano: {carro.Ano}");
-//         // carro.Ligar();
-//         // carro.EmMovimento = true;
-//         // Console.WriteLine($"Carro Em Movimento: {carro.EmMovimento}");
-//         // carro.Desligar();
-//         // carro.EmMovimento = false;
-//         // Console.WriteLine($"Carro Em Movimento: {carro.EmMovimento}");
-//         ContaBancaria contaBancaria = new ContaBancaria();
-//         contaBancaria.Titular = "Pedro Sampaio";
-//         contaBancaria.Saldo = 300;
-//         Console.WriteLine($"Titular: {contaBancaria.Titular}");
-//         Console.WriteLine($"Saldo: {contaBancaria.Saldo}");
-//         contaBancaria.Depositar(100);
-//       // Console.WriteLine($"Novo saldo após depósito: {contaBancaria.Depositar}");
-//         contaBancaria.Sacar(300);
-//        // Console.WriteLine($"Novo saldo após saque: {contaBancaria.Sacar}");
-        
-//        }
+//         Console.Clear();
+//         // Criando uma instância da classe ContaBancaria
+//         ContaBancaria conta = new ContaBancaria();
 
+//         // Exibindo saldo inicial
+//         Console.WriteLine($"Saldo Inicial: {conta.Saldo}");
 
-// MAIN COM MÉTODO COM RETORNO DE VALOR
-// namespace Orientacao_objetos
-// {
-// class Orientacao_objetos
-//     {
-// class Program
-//     {
-//         static void Main()
-//         {
-//             Console.Clear();
-//             ContaBancaria contaBancaria = new ContaBancaria();
-//             contaBancaria.NomeTitular = "Pedro Sampaio";
-//             contaBancaria.SaldoTitular = 200;
+//         // Realizando depósito
+//         conta.Depositar(1000);
 
-//             Console.WriteLine($"Titular: {contaBancaria.NomeTitular}");
-//             Console.WriteLine($"Saldo: {contaBancaria.SaldoTitular}");
+//         // Exibindo saldo após depósito
+//         Console.WriteLine($"Saldo após Depósito: {conta.Saldo}");
 
-//             double valorDepositado = contaBancaria.DepositarValor(100);
-//             Console.WriteLine($"Novo Saldo após depósito: {valorDepositado}");
+//         // Realizando saque
+//         conta.Sacar(500);
 
-//             double novoSaldo = contaBancaria.SacarValor(290);
-//             Console.WriteLine($"Novo Saldo após saque: {contaBancaria.SaldoTitular}");
-            
-//         }
+//         // Exibindo saldo após saque
+//         Console.WriteLine($"Saldo após Saque: {conta.Saldo}");
+
+//         // Aguarda a entrada do usuário antes de fechar a aplicação
+//         Console.ReadLine();
 //     }
-//    }
 // }
 
-// namespace Orientacao_objetos
-// {
-// class Orientacao_objetos
-//     {
-// class Program
-//     {
-//         static void Main()
-//         {
-//             Console.Clear();
-//             ContaBancaria contaBancaria = new ContaBancaria();
-//             contaBancaria.Titular = "Moisés Lucas";
-//             contaBancaria.Saldo = 200;
+//*******************************************************************************************************************************************
+// using Orientacao_objetos;
+// Console.Clear();
+// ContaPoupanca cp = new ContaPoupanca();
+// Console.WriteLine($"Saldo inicial da conta poupança: {cp.Saldo}");
+// cp.Depositar(300);
+// Console.WriteLine($"Saldo após deposito: {cp.Saldo}");
+// cp.Sacar(310);
+// Console.WriteLine($"Saldo após o saque: {cp.Saldo}");
 
-//             Console.WriteLine($"Titular: {contaBancaria.Titular}");
-//             Console.WriteLine($"Saldo: {contaBancaria.Saldo}");
+//*************************************************************************************
+/*
+Suponha que você esteja desenvolvendo um sistema para gerenciar 
+informações sobre estudantes em uma escola. Crie uma 
+classe Estudante com os seguintes requisitos:
 
-//             contaBancaria.Depositar(100);
-//             Console.WriteLine($"Novo Saldo após depósito: {contaBancaria.Saldo}");
-
-//              contaBancaria.Sacar(290);
-//             Console.WriteLine($"Novo Saldo após saque: {contaBancaria.Saldo}");
-            
-//         }
-//     }
-//    }
-// }
-namespace Orientacao_objetos
-{
-    class Orientacao_objetos
-    {    
-          static void Main()
-            {
-                Console.Clear();
-                Pessoa pessoa = new Pessoa();
-                pessoa.Nome = "Antônio Santos";
-                Console.WriteLine($"Nome: {pessoa.Nome}");
-                pessoa.Profissao = "Programador Jr C#";
-                Console.WriteLine($"Profissão: {pessoa.Profissao}");
-                pessoa.Idade = 38;
-                Console.WriteLine($"Idade: {pessoa.Idade}");
-                pessoa.Estudar();
-                pessoa.FazerExercicio();
-
-                
-            } 
-    }
-}
+A classe deve ter atributos privados para o nome do estudante, a idade e a nota média.
+Utilize métodos get e set para encapsular o acesso a esses atributos.
+Crie um método público chamado ExibirInformacoes que exibe o nome, 
+a idade e a nota média do estudante.
+Implemente validações nos métodos set para garantir que a idade seja um valor
+ não negativo e que a nota média esteja no intervalo de 0 a 10.
+*/
+using Orientacao_objetos;
+Console.Clear();
+Estudante estudante = new Estudante();
+estudante.Nome = "João pedro";
+estudante.Idade = 38;
+estudante.NotaMedia = 7;
+estudante.ExibirInformacoes();
