@@ -1,20 +1,14 @@
-
 namespace Orientacao_objetos
 {
-    public class Pessoa
+    class Pessoa
     {
-        public string Nome;
-        public int Idade;
-        public string Profissao;
-
-        public void FazerExercicio()
+        private string nomeCompleto;
+        public string NomeCompleto
         {
-            Console.WriteLine("Praticante de Corrida de rua");
+            get => nomeCompleto;
+            set=> nomeCompleto = value;
         }
-        public void Estudar()
-        {
-            Console.WriteLine("Estudante programação");
-
-        }
+        public string Profissao {get;set;}
+        public int Idade {get;set;}
     }
 }
