@@ -1,5 +1,6 @@
 
 using Orientacao_objetos;
+Console.Clear();
 Posto carro1 = new Posto("Geraldo");
 carro1.Modelo = "Corsa hatch";
 carro1.Tanque = 45;
