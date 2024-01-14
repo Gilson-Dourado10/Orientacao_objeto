@@ -1,4 +1,4 @@
-
+//conceito de abstração e encapsulamento
 namespace Orientacao_objetos
 {
     public class Posto
