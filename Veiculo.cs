@@ -12,8 +12,10 @@ namespace Orientacao_objetos;
       }
       public string Proprietario
     {
-      get { return _proprietario; }
-        set { _proprietario = value; }
+      // get { return _proprietario; }
+      // set { _proprietario = value; }
+      get => _proprietario;
+      set => _proprietario = value;
     }
       public double Rodas()
       {
