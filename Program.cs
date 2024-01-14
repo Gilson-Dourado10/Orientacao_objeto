@@ -16,5 +16,13 @@
 // Console.Write("quantidades veículos abastecidos: ");
 // Console.WriteLine(Posto.VeiculosAbastecidos);
 //*******************************************************************************************
-using Orientacao_objetos;
 
+using Orientacao_objetos;
+Console.Clear();
+CarroAutoEscola voyage = new CarroAutoEscola("Pedro Antõnio", "Fernado Fernades");
+Console.WriteLine($"Proprietario: {voyage.Proprietario}");
+Console.WriteLine($"Aluno: {voyage.Aluno}");
+double rodas = voyage.Rodas();
+Console.WriteLine($"Quatro rodas: {rodas}");
+Console.WriteLine($"Tem Airbag: {voyage.Airbag}");
+Console.WriteLine($"tem motor: {voyage.Motor}");
