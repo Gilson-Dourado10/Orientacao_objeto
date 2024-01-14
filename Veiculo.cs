@@ -1,5 +1,6 @@
 
-using Orientacao_objetos;
+namespace Orientacao_objetos;
+
     public class Veiculo
     {
        private string _proprietario;
