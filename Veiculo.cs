@@ -17,7 +17,7 @@ namespace Orientacao_objetos;
       get => _proprietario;
       set => _proprietario = value;
     }
-      public double Rodas()
+      public virtual double Rodas()
       {
          return 4;
       }
