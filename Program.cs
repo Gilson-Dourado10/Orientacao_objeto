@@ -17,12 +17,22 @@
 // Console.WriteLine(Posto.VeiculosAbastecidos);
 //*******************************************************************************************
 
+// using Orientacao_objetos;
+// Console.Clear();
+// CarroAutoEscola voyage = new CarroAutoEscola("Pedro Antõnio", "Fernado Fernades");
+// Console.WriteLine($"Proprietario: {voyage.Proprietario}");
+// Console.WriteLine($"Aluno: {voyage.Aluno}");
+// double rodas = voyage.Rodas();
+// Console.WriteLine($"Quatro rodas: {rodas}");
+// Console.WriteLine($"Tem Airbag: {voyage.Airbag}");
+// Console.WriteLine($"tem motor: {voyage.Motor}");
+//*********************************************************************
 using Orientacao_objetos;
 Console.Clear();
-CarroAutoEscola voyage = new CarroAutoEscola("Pedro Antõnio", "Fernado Fernades");
-Console.WriteLine($"Proprietario: {voyage.Proprietario}");
-Console.WriteLine($"Aluno: {voyage.Aluno}");
-double rodas = voyage.Rodas();
-Console.WriteLine($"Quatro rodas: {rodas}");
-Console.WriteLine($"Tem Airbag: {voyage.Airbag}");
-Console.WriteLine($"tem motor: {voyage.Motor}");
+Carreta carreta = new Carreta("João Guilherme");
+Console.WriteLine($"Proprietario: {carreta.Proprietario}");
+double rodas = carreta.Rodas();
+Console.WriteLine($"Tem Rodas: {rodas}");
+Console.WriteLine($"Tem Airbag: {carreta.Airbag}");
+Console.WriteLine($"tem motor: {carreta.Motor}");
+Console.WriteLine($"tem Carroceria: {carreta.Carroceria}");
