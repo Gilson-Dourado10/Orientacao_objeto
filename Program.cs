@@ -27,12 +27,34 @@
 // Console.WriteLine($"Tem Airbag: {voyage.Airbag}");
 // Console.WriteLine($"tem motor: {voyage.Motor}");
 //*********************************************************************
+// using Orientacao_objetos;
+// Console.Clear();
+// Carreta carreta = new Carreta("João Guilherme");
+// Console.WriteLine($"Proprietario: {carreta.Proprietario}");
+// double rodas = carreta.Rodas();
+// Console.WriteLine($"Tem Rodas: {rodas}");
+// Console.WriteLine($"Tem Airbag: {carreta.Airbag}");
+// Console.WriteLine($"tem motor: {carreta.Motor}");
+// Console.WriteLine($"tem Carroceria: {carreta.Carroceria}");
+//******************************************************************************
 using Orientacao_objetos;
 Console.Clear();
-Carreta carreta = new Carreta("João Guilherme");
-Console.WriteLine($"Proprietario: {carreta.Proprietario}");
-double rodas = carreta.Rodas();
-Console.WriteLine($"Tem Rodas: {rodas}");
-Console.WriteLine($"Tem Airbag: {carreta.Airbag}");
-Console.WriteLine($"tem motor: {carreta.Motor}");
-Console.WriteLine($"tem Carroceria: {carreta.Carroceria}");
+
+Onibus onibus = new Onibus("Cesar Calvante de Morais");
+onibus.NomeEmpresa = "Viação Guarará";
+Console.WriteLine($"Nome da empresa: {onibus.NomeEmpresa}");
+Console.WriteLine($"Proprietario: {onibus.Proprietario}");
+onibus.Motorista = "Geraldo majela";
+Console.WriteLine($"Motorista do ônibus: {onibus.Motorista}");
+
+double rodas = onibus.Rodas();
+Console.WriteLine($"Rodas: {rodas}");
+Console.WriteLine($"Tem Airbag: {onibus.Airbag}");
+int  quantidadePassageiros = onibus.QuantidadePassageiro(45);
+Console.WriteLine($"Quantidade Passageiros: {quantidadePassageiros}");
+
+
+
+
+
+
