@@ -13,6 +13,10 @@ namespace Orientacao_objetos
         {
             _proprietario = proprietario;
         }
+        public string ObterProprietario()
+        {
+            return _proprietario;
+        }
         public string Modelo
         {
             get { return _modelo; }

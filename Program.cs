@@ -60,10 +60,11 @@ Moto moto = new Moto("Jair Almeida");
 Console.WriteLine($"Proprietário moto: " + moto);
 moto.Tanque = 18;
 Console.WriteLine($"Tanque moto: " + moto.Tanque);
-moto.Abastecer(36);
-Console.WriteLine($"Abastecer moto: " + moto.Abastecer);
+moto.Abastecer(30);
+Console.WriteLine($"Abastecer moto: " + moto.ObterQuantidadeCombustivel());
 moto.Modelo = "Kavazaki Ninja ";
 Console.WriteLine($"Modelo moto: " + moto.Modelo);
+Console.WriteLine($"Proprietário da moto: " + moto.ObterProprietario());
 
 //***********************************************
 
