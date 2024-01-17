@@ -64,6 +64,11 @@ moto.Abastecer(30);
 Console.WriteLine($"Abastecer moto: " + moto.ObterQuantidadeCombustivel());
 moto.Modelo = "Kavazaki Ninja ";
 Console.WriteLine($"Modelo moto: " + moto.Modelo);
+int veiculosAbastecidos = Posto.VeiculosAbastecidos;
+Console.WriteLine($"Veiculos abastecidos: " + veiculosAbastecidos);
+
+
+
 
 //***********************************************
 
