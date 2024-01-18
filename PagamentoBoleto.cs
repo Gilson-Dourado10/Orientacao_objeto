@@ -8,9 +8,10 @@ namespace Orientacao_objetos;
 
     public override void Pagar()
     {
-        
-
-        base.Pagar(); // chamando a herança do método
+        Console.WriteLine("Iniciando o pagamento Boleto....");
+        //implementação da lógica específica do pagmento do boleto
+        Console.WriteLine($"Pagamento boleto {NumeroBoleto} realizado com sucesso.");
+        base.Pagar(); // // Chama o método Pagar() da classe base
     }
 }
  
