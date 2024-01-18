@@ -1,12 +1,12 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace Orientacao_objetos
+namespace Orientacao_objetos;
+
+public class Moto : Posto
 {
-    public class Moto : Veiculo
+    public Moto(String proprietario) :base(proprietario){ }
+    public int ObterQuantidadeCombustivel()
     {
-        public bool TempartidaEletrica {get ; set; }
+        return Tanque;
     }
+
 }
