@@ -7,10 +7,10 @@ namespace Orientacao_objetos;
       DateTime Vencimento;
       void Pagar()
       {
-        ConsultarSaldoCartao();
+        ConsultarSaldoCartao("5228 4643 3066 3579");
       }
 
-    private  void ConsultarSaldoCartao()        //ABSTRAÇÃO
+    private  void ConsultarSaldoCartao(string numero)        //ABSTRAÇÃO
       {
 
       }
