@@ -1,23 +1,41 @@
 
 
 
+// namespace Orientacao_objetos;
+
+// public class Pagamento
+// {
+//     public DateTime Vencimento;
+//     public virtual void Pagar()
+//     {
+    
+//         ConsultarSaldoCartao("5228 4643 3066 3579");
+//     }
+
+//     private void ConsultarSaldoCartao(string numero)        //ABSTRAÇÃO
+//     {
+       
+//     }
+
+// }
+
+
+
+
 namespace Orientacao_objetos;
 
 public class Pagamento
 {
     public DateTime Vencimento;
-    public virtual void Pagar()
+    public virtual void Pagar() { }
+    public override string ToString()
     {
-    
-        ConsultarSaldoCartao("5228 4643 3066 3579");
+        return Vencimento.ToString("dd/MM/yyyy");
     }
-
-    private void ConsultarSaldoCartao(string numero)        //ABSTRAÇÃO
-    {
-       
-    }
-
 }
+
+
+
 
 
 
