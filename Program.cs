@@ -1,6 +1,14 @@
-// using Orientacao_objetos;
-// Console.Clear();
+using Orientacao_objetos;
+Console.Clear();
 
-// List<MembroUniversidade> membroUniversidades = new List<MembroUniversidade>();
-// membroUniversidades.Add(new Professor {Nome = "Marco Castro" , Disciplina = "Orientação Objetos"}); 
-// membroUniversidades.Add(new Aluno {Nome = "Felipe Ricardo" , Curso = "Análise e Desenvolvimento de sistemas"});
+List<MembroUniversidades> membroUniversidades = new List<MembroUniversidades>();
+membroUniversidades.Add(new Professor {Nome = "Marco Castro" , Disciplina = "Orientação Objetos"}); 
+membroUniversidades.Add(new Aluno {Nome = "Felipe Ricardo" , Curso = "Análise e Desenvolvimento de sistemas"});
+membroUniversidades.Add(new Professor {Nome = "Adão Santos" , Disciplina = "Power BI"});
+membroUniversidades.Add(new Aluno {Nome = "João Pedro" , Curso = "Sistema para Internet"});
+
+foreach (var membro in membroUniversidades )
+{
+ membro.ExibirInfo();   
+}
+

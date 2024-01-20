@@ -2,12 +2,12 @@
 
 namespace Orientacao_objetos;
 
-    public class MembroUniversidade
+    public class MembroUniversidades
     {
         public string Nome{ get ; set ;}
         public virtual void ExibirInfo()
         {
-            Console.WriteLine($"dados do Membro: {Nome}");
+            Console.WriteLine($"Nome: {Nome}");
         }
     }
     
