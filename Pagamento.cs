@@ -1,6 +1,4 @@
 
-
-
 // namespace Orientacao_objetos;
 
 // public class Pagamento
@@ -18,9 +16,6 @@
 //     }
 
 // }
-
-
-
 
 namespace Orientacao_objetos;
 
