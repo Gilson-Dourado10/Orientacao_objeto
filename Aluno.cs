@@ -8,7 +8,7 @@ namespace Orientacao_objetos;
      public DateTime InicioCurso{ get; set ;}
     public override void ExibirInfo()
     {
-        Console.WriteLine($"Nome Aluno: {Nome} Curso: {Curso}");
+        Console.WriteLine($"Nome Aluno: {Nome} Curso: {Curso}, Inicio do Curso: {InicioCurso}");
     }
 
 

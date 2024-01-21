@@ -9,6 +9,6 @@ public class Professor : MembroUniversidades
 
     public override void ExibirInfo()
     {
-        Console.WriteLine($"Nome Professor: {Nome} e Disciplina: {Disciplina} Data Prova Final Disciplina: {DataProvaFinalDisciplina}");
+        Console.WriteLine($"Nome Professor: {Nome} , Disciplina: {Disciplina}, Data Prova Final Disciplina: {DataProvaFinalDisciplina}");
     }
 }
