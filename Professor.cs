@@ -5,6 +5,7 @@ namespace Orientacao_objetos;
 public class Professor : MembroUniversidades
 {
     public string Disciplina { get; set; }
+    public DateTime DataProvaFinalDisciplina{get ; set ;}
 
     public override void ExibirInfo()
     {
