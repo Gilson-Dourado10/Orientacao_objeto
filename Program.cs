@@ -12,19 +12,62 @@
 //  membro.ExibirInfo();   
 // }
 
+// using System;
+
+// public class Exemplo
+// {
+//     // Membro público
+//     public string MensagemPublica = "Isso é público.";
+
+//     // Método público
+//     public void ExibirMensagem()
+//     {
+//         Console.WriteLine(MensagemPublica);
+//     }
+// }
+
+// class Program
+// {
+//     static void Main()
+//     {
+//         // Instanciando a classe
+//         Exemplo meuExemplo = new Exemplo();
+
+//         // Acessando e exibindo o membro público
+//         Console.WriteLine($"Mensagem: {meuExemplo.MensagemPublica}");
+
+//         // Chamando o método público
+//         meuExemplo.ExibirMensagem();
+
+//         Console.ReadLine();
+//     }
+// }
+
+
+                        // MODFICADOR DE ACESSO PRIVATE
+
 using System;
 
 public class Exemplo
 {
-    // Membro público
-    public string MensagemPublica = "Isso é público.";
+    // Membro privado
+    private string mensagemPrivada = "Isso é privado.";
 
-    // Método público
+    // Método privado
+    private void ExibirMensagemPrivada()
+    {
+        Console.WriteLine(mensagemPrivada);
+    }
+
+    // Método público que chama o método privado
     public void ExibirMensagem()
     {
-        Console.WriteLine(MensagemPublica);
+        // Podemos acessar o membro privado dentro da própria classe
+        ExibirMensagemPrivada();
     }
 }
+
+
 
 class Program
 {
@@ -33,10 +76,10 @@ class Program
         // Instanciando a classe
         Exemplo meuExemplo = new Exemplo();
 
-        // Acessando e exibindo o membro público
-        Console.WriteLine($"Mensagem: {meuExemplo.MensagemPublica}");
+        // Tentando acessar diretamente o membro privado (isso causaria um erro)
+        // Console.WriteLine(meuExemplo.mensagemPrivada); // Isso geraria um erro de compilação
 
-        // Chamando o método público
+        // Chamando o método público que, por sua vez, acessa o membro privado
         meuExemplo.ExibirMensagem();
 
         Console.ReadLine();
