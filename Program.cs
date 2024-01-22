@@ -130,6 +130,42 @@
 using System;
 
 // Classe com membros internos
+// public class Exemplo
+// {
+//     // Membro interno
+//     internal string mensagemInterna = "Isso é interno.";
+
+//     // Método interno
+//     internal void ExibirMensagemInterna()
+//     {
+//         Console.WriteLine(mensagemInterna);
+//     }
+// }
+
+
+// // ProjetoB (Assembly 2)
+// using System;
+
+// class Program
+// {
+//     static void Main()
+//     {
+//         // Tentativa de acessar diretamente o membro interno do ProjetoA
+//         // Isso resultará em um erro de compilação
+//          Exemplo exemploDoOutroProjeto = new Exemplo();
+//          Console.WriteLine(exemploDoOutroProjeto.mensagemInterna);
+
+//         // Tentativa de chamar o método interno do ProjetoA
+//         // Isso resultará em um erro de compilação
+//          exemploDoOutroProjeto.ExibirMensagemInterna();
+
+//         Console.ReadLine();
+//     }
+// }
+
+using System;
+
+// Classe com membros internos
 public class Exemplo
 {
     // Membro interno
@@ -142,24 +178,19 @@ public class Exemplo
     }
 }
 
-
-// ProjetoB (Assembly 2)
-using System;
-
 class Program
 {
     static void Main()
     {
-        // Tentativa de acessar diretamente o membro interno do ProjetoA
-        // Isso resultará em um erro de compilação
-         Exemplo exemploDoOutroProjeto = new Exemplo();
-         Console.WriteLine(exemploDoOutroProjeto.mensagemInterna);
+        // Instanciando a classe
+        Exemplo meuExemplo = new Exemplo();
 
-        // Tentativa de chamar o método interno do ProjetoA
-        // Isso resultará em um erro de compilação
-         exemploDoOutroProjeto.ExibirMensagemInterna();
+        // Acessando diretamente o membro interno
+        Console.WriteLine($"Mensagem Interna: {meuExemplo.mensagemInterna}");
+
+        // Chamando o método interno
+        meuExemplo.ExibirMensagemInterna();
 
         Console.ReadLine();
     }
 }
-
