@@ -15,3 +15,16 @@ namespace Orientacao_objetos;
 
 //     public int MyProperty { get => myProperty; set => myProperty = value; }
 // }
+
+
+//*******************************************************************
+
+// namespace Orientacao_objetos;
+// public class MinhaPropriedade
+// {
+//     public int MyProperty { get; private set; }
+//     public MinhaPropriedade(int valorInicial)
+//     {
+
+//     }
+// }
