@@ -1,11 +1,11 @@
 
 
-namespace Orientacao_objetos;
+// namespace Orientacao_objetos;
 
-    public class MinhaPropriedade
-    {
-        public int MyProperty { get; set; }
-    }
+//     public class MinhaPropriedade
+//     {
+//         public int MyProperty { get; set; }
+//     }
 
 
 // namespace Orientacao_objetos;
@@ -19,12 +19,16 @@ namespace Orientacao_objetos;
 
 //*******************************************************************
 
-// namespace Orientacao_objetos;
-// public class MinhaPropriedade
-// {
-//     public int MyProperty { get; private set; }
-//     public MinhaPropriedade(int valorInicial)
-//     {
-
-//     }
-// }
+namespace Orientacao_objetos;
+public class MinhaPropriedade
+{
+    public int MyProperty { get; private set; }
+    public MinhaPropriedade(int valorInicial)
+    {
+        MyProperty = valorInicial;
+    }
+    public void AlterarValorDaPropriedade(int NovoValor)
+    {
+        MyProperty = NovoValor;
+    }
+}
