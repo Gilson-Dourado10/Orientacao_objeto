@@ -2,12 +2,28 @@
 
 namespace Orientacao_objetos;
 
-    public class MinhaPropriedade
+
+public class MinhaPropriedade
+{
+    public int MyProperty { get; private set; }
+    public MinhaPropriedade(int valorInicial)
     {
-        public int MyProperty { get; set; }
+        MyProperty = valorInicial;
+    }
+    public void AlterarValorDaPropriedade(int NovoValor)
+    {
+        MyProperty = NovoValor;
+    }
+}
+
+//***********************************************************************************
+
+    public class MinhaPropriedad
+    {
+        public int ValorCestaBasica { get; set; }
     }
 //****************************************************************************
-public class Minhapropiriedade
+public class Minhaprop
 {
     private double _myProperty;
     public double MyProperty
@@ -22,9 +38,9 @@ public class Minhapropiriedade
 
     public class MyProperty
     {
-    private decimal _myPropertyy;
+    private string _myPropertyy;
 
-    public decimal MyPropertyy 
+    public string MyPropertyy 
 
     { 
         get => _myPropertyy;
@@ -33,24 +49,5 @@ public class Minhapropiriedade
 }
 
 
-
-
-
-
-
-
 //*******************************************************************
 
-// namespace Orientacao_objetos;
-// public class MinhaPropriedade
-// {
-//     public int MyProperty { get; private set; }
-//     public MinhaPropriedade(int valorInicial)
-//     {
-//         MyProperty = valorInicial;
-//     }
-//     public void AlterarValorDaPropriedade(int NovoValor)
-//     {
-//         MyProperty = NovoValor;
-//     }
-// }
