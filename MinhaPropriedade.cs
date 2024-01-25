@@ -20,17 +20,17 @@ public class Minhapropiriedade
 
 //********************************************************************************
 
-//     public class MyProperty
-//     {
-//     private decimal _myPropertyy;
+    public class MyProperty
+    {
+    private decimal _myPropertyy;
 
-//     public decimal MyPropertyy 
+    public decimal MyPropertyy 
 
-//     { 
-//         get => _myPropertyy;
-//         set => _myPropertyy = value;
-//     }
-// }
+    { 
+        get => _myPropertyy;
+        set => _myPropertyy = value;
+    }
+}
 
 
 
