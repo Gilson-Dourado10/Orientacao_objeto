@@ -7,15 +7,15 @@ namespace Orientacao_objetos;
         public int MyProperty { get; set; }
     }
 //****************************************************************************
-// public class Minhapropiriedade
-// {
-//     private double _myProperty;
-//     public double MyProperty
-//     {
-//         get {return _myProperty; }
-//         set {_myProperty = value;}
-//     }
-// }
+public class Minhapropiriedade
+{
+    private double _myProperty;
+    public double MyProperty
+    {
+        get {return _myProperty; }
+        set {_myProperty = value;}
+    }
+}
 
 
 //********************************************************************************
