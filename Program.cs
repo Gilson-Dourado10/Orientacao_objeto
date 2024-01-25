@@ -7,4 +7,8 @@
 
 //*****************************************
 
+using Orientacao_objetos;
+
 Console.Clear();
+MinhaPropriedade minhaPropriedade = new MinhaPropriedade(45);
+Console.WriteLine($"Primeiro valor da propriedade: {minhaPropriedade.MyProperty}");
