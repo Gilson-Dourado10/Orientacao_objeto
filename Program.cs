@@ -24,7 +24,7 @@ using Orientacao_objetos;
 
  Console.Clear();
 
-var person = new ClassPerson();
+var person = new ClassPerson("Everaldo dos santos");
 var nomeDaPessoa = person.Nome;
 Console.WriteLine($"Nome da pessoa: {nomeDaPessoa}");
  person.AlterarNomePessoa();

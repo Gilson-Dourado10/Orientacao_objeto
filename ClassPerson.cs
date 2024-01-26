@@ -23,9 +23,9 @@ public class ClassPerson
 {
     public string Nome { get; private set; }
 
-    public ClassPerson()
+    public ClassPerson(string nome)
     {
-        Nome = "Jorge Amado";
+        Nome = nome;
     }
     public string AlterarNomePessoa()
     {
