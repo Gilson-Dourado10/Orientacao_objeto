@@ -27,8 +27,8 @@ public class ClassPerson
     {
         Nome = nome;
     }
-    public string AlterarNomePessoa()
+    public string AlterarNomePessoa(string nome)
     {
-        return Nome = "Edicleuso Pereira";
+        return nome;
     }
 }
