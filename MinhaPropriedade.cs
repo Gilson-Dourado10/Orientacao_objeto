@@ -16,37 +16,37 @@ public class MinhaPropriedade
     }
 }
 
-//***********************************************************************************
+//*********************************************************************************
 
-    public class MinhaPropriedad
-    {
-        public int ValorCestaBasica { get; set; }
-    }
+    // public class MinhaPropriedad
+    // {
+    //     public int ValorCestaBasica { get; set; }
+    // }
 //****************************************************************************
-public class Minhaprop
-{
-    private double _myProperty;
-    public double MyProperty
-    {
-        get {return _myProperty; }
-        set {_myProperty = value;}
-    }
-}
+// public class Minhaprop
+// {
+//     private double _myProperty;
+//     public double MyProperty
+//     {
+//         get {return _myProperty; }
+//         set {_myProperty = value;}
+//     }
+// }
 
 
 //********************************************************************************
 
-    public class MyProperty
-    {
-    private string _myPropertyy;
+//     public class MyProperty
+//     {
+//     private string _myPropertyy;
 
-    public string MyPropertyy 
+//     public string MyPropertyy 
 
-    { 
-        get => _myPropertyy;
-        set => _myPropertyy = value;
-    }
-}
+//     { 
+//         get => _myPropertyy;
+//         set => _myPropertyy = value;
+//     }
+// }
 
 
 //*******************************************************************
