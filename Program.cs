@@ -7,19 +7,31 @@
 
 //******************************************************************************************
 
-using Orientacao_objetos;
+// using Orientacao_objetos;
 
-Console.Clear();
-var minhaPropriedade = new MinhaPropriedade(45);
-var primeiroValor = minhaPropriedade.MyProperty;
-Console.WriteLine($"Primeiro valor da propriedade: {primeiroValor}");
-Console.WriteLine();
-minhaPropriedade.AlterarValorDaPropriedade(50);
-var segundoValor = minhaPropriedade.MyProperty;
-Console.WriteLine($"Segundo valor da propriedade: {segundoValor}");
+// Console.Clear();
+// var minhaPropriedade = new MinhaPropriedade(45);
+// var primeiroValor = minhaPropriedade.MyProperty;
+// Console.WriteLine($"Primeiro valor da propriedade: {primeiroValor}");
+// Console.WriteLine();
+// minhaPropriedade.AlterarValorDaPropriedade(50);
+// var segundoValor = minhaPropriedade.MyProperty;
+// Console.WriteLine($"Segundo valor da propriedade: {segundoValor}");
 
 
 //************************************************************************************************
+using Orientacao_objetos;
+
+ Console.Clear();
+
+var person = new ClassPerson();
+var nomeDaPessoa = person.Nome;
+Console.WriteLine($"Nome da pessoa: {nomeDaPessoa}");
+ person.AlterarNomePessoa();
+ var novoNomePessoa = person.Nome;
+ Console.WriteLine($"Novo nome da Pessoa: {novoNomePessoa}");
+
+
 
 
 
