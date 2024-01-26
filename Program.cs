@@ -14,9 +14,11 @@ var minhaPropriedade = new MinhaPropriedade(45);
 var primeiroValor = minhaPropriedade.MyProperty;
 Console.WriteLine($"Primeiro valor da propriedade: {primeiroValor}");
 Console.WriteLine();
-minhaPropriedade.MyProperty = 50;
+minhaPropriedade.AlterarValorDaPropriedade(50);
+var segundoValor = minhaPropriedade.MyProperty;
+Console.WriteLine($"Segundo valor da propriedade: {segundoValor}");
 
-//minhaPropriedade.AlterarValorDaPropriedade;
+
 //************************************************************************************************
 
 
