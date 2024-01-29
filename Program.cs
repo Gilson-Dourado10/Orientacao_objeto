@@ -13,10 +13,11 @@
 //get private
 
 using Orientacao_objetos;
-
+Console.Clear();
 Futeboll futeboll = new Futeboll();
+futeboll.DefinirTime("Coritiba");
+Console.WriteLine($"Time de futebol: {futeboll.ObterTime()}");                   
 
-Console.WriteLine();                   
 
 
 
