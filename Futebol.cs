@@ -11,8 +11,8 @@ namespace Orientacao_objetos;
             Time = timeSerieA;
        }
        // Método para alterar o  time série A
-       public string AlterarNomeTime(String novoTimeSeireA)
+       public string AlterarNomeTime(String novoTimeSerieA)
        {
-           return  Time = novoTimeSeireA;
+           return  Time = novoTimeSerieA;
        }
     }
