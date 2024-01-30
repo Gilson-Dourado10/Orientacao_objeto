@@ -17,16 +17,32 @@
 //        }
 //     }
 //************************************************************************************
-namespace Orientacao_objetos;
-public class Futeboll
+// public class Futeboll
+// {
+//     public string Time {private get ; set; }
+//     public void DefinirTime(string novoTime)
+//     {
+//         Time = novoTime;
+//     }
+//     public String ObterTime()
+//     {
+//         return Time;
+//     }
+// }
+//************************************************************************
+// GET PRIVATE COM COSTRUTOR
+ namespace Orientacao_objetos;
+
+public class Football
+{ 
+ public string Time {private get; set; }
+public Football(string timeNovo)
 {
-    public string Time {private get ; set; }
-    public void DefinirTime(string novoTime)
+    Time = timeNovo;
+}
+    public string PegarTime()
     {
-        Time = novoTime;
+       return Time; 
     }
-    public String ObterTime()
-    {
-        return Time;
-    }
+
 }

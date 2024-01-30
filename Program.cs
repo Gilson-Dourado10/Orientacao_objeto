@@ -12,13 +12,15 @@
 //*****************************************************************************************************
 //get private
 
-using Orientacao_objetos;
-Console.Clear();
-Futeboll futeboll = new Futeboll();
-futeboll.DefinirTime("Coritiba");
-Console.WriteLine($"Time de futebol: {futeboll.ObterTime()}");  
-var novoTime = futeboll.Time = "Santos";                 
-Console.WriteLine($"Time novo: {novoTime}");
+// using Orientacao_objetos;
+// Console.Clear();
+// Futeboll futeboll = new Futeboll();
+// futeboll.DefinirTime("Coritiba");
+// Console.WriteLine($"Time de futebol: {futeboll.ObterTime()}");  
+// var novoTime = futeboll.Time = "Santos";                 
+// Console.WriteLine($"Time novo: {novoTime}");
+// Console.WriteLine();
+//*******************************************************************************************
 
 
 
