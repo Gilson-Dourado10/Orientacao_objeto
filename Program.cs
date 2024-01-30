@@ -28,7 +28,8 @@ Console.Clear();
 var football = new Football("Real Madrid");
 var timeInicioPartida = football.PegarTime();
 Console.WriteLine($"Time que inicia a partida: {timeInicioPartida}");
-
+var timeInicioPartida2 = football.Time = "Barcelona";
+Console.WriteLine($"Novo time que inicia a partida: {timeInicioPartida2}");
 
 
 
