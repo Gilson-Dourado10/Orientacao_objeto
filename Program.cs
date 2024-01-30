@@ -22,6 +22,13 @@
 // Console.WriteLine();
 //*******************************************************************************************
 
+            //get private
+using Orientacao_objetos;
+Console.Clear();
+var football = new Football("Real Madrid");
+var timeInicioPartida = football.PegarTime();
+Console.WriteLine($"Time que inicia a partida: {timeInicioPartida}");
+
 
 
 
