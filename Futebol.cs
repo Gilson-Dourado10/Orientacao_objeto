@@ -1,5 +1,5 @@
 
-            // set private 
+// set private 
 // namespace Orientacao_objetos;
 
 //     public class Futebol
@@ -30,19 +30,45 @@
 //     }
 // }
 //************************************************************************
-// GET PRIVATE COM COSTRUTOR
- namespace Orientacao_objetos;
+// //  GET PRIVATE COM COSTRUTOR
+//  namespace Orientacao_objetos;
 
-public class Football
-{ 
- public string Time {private get; set; }
-public Football(string timeNovo)
+// public class Football
+// { 
+//  public string Time {private get; set; }
+// public Football(string timeNovo)
+// {
+//     Time = timeNovo;
+// }
+//     public string PegarTime()
+//     {
+//        return Time; 
+//     }
+
+// }
+//************************************************************************************************
+//GET PRIVATE  E SET PRIVATE 
+
+namespace Orientacao_objetos;
+public class MinhaConta
 {
-    Time = timeNovo;
-}
-    public string PegarTime()
+    private  double _saldo;
+    public MinhaConta(double valorSaldoInicial)
     {
-       return Time; 
+        _saldo = valorSaldoInicial;
     }
-
+    public void DepositMoney(double valor)
+    {
+       _saldo += valor; 
+    }
+    public void sacar(double valor)
+    {
+        if (_saldo < valor )
+        {
+           Console.WriteLine(); 
+        }
+    }
 }
+
+
+

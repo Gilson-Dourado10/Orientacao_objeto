@@ -22,17 +22,20 @@
 // Console.WriteLine();
 //*******************************************************************************************
 
-            //get private
-using Orientacao_objetos;
-Console.Clear();
-var football = new Football("Real Madrid");
-var timeInicioPartida = football.PegarTime();
-Console.WriteLine($"Time que inicia a partida: {timeInicioPartida}");
-var timeInicioPartida2 = football.Time = "Barcelona";
-Console.WriteLine($"Novo time que inicia a partida: {timeInicioPartida2}");
+//             //get private
+// using Orientacao_objetos;
+// Console.Clear();
+// var football = new Football("Real Madrid");
+// var timeInicioPartida = football.PegarTime();
+// Console.WriteLine($"Time que inicia a partida: {timeInicioPartida}");
+// var timeInicioPartida2 = football.Time = "Barcelona";
+// Console.WriteLine($"Novo time que inicia a partida: {timeInicioPartida2}");
+// Console.WriteLine();
 
+//*****************************************************************************************
+            // GET PRIVATE E  SET PRIVATE 
 
-
+// using Orientacao_objetos;
 
 
 
