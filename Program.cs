@@ -35,7 +35,8 @@
 //*****************************************************************************************
             // GET PRIVATE E  SET PRIVATE 
 
-// using Orientacao_objetos;
+using Orientacao_objetos;
+var minhaConta = new MinhaConta(2000);
 
 
 

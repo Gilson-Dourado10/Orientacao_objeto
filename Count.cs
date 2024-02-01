@@ -49,6 +49,7 @@
 //************************************************************************************************
 //GET PRIVATE  E SET PRIVATE 
 
+
 namespace Orientacao_objetos;
 public class MinhaConta
 {
@@ -60,13 +61,25 @@ public class MinhaConta
     public void DepositMoney(double valor)
     {
        _saldo += valor; 
+           Console.WriteLine($"Valor depositado:  {valor}"); 
+
     }
     public void sacar(double valor)
     {
         if (_saldo < valor )
         {
-           Console.WriteLine(); 
+           Console.WriteLine($"Saque no valor: {valor}"); 
         }
+        else
+        {
+           Console.WriteLine($"Saque não autorizado no valor: {valor}"); 
+            
+        }
+    }
+    public void ExtratoSaldo()
+    {
+           Console.WriteLine($"Saldo atual no valor: {_saldo}"); 
+
     }
 }
 
