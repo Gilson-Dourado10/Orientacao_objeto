@@ -36,9 +36,17 @@
             // GET PRIVATE E  SET PRIVATE 
 
 using Orientacao_objetos;
+Console.Clear();
 var minhaConta = new MinhaConta(2000);
 minhaConta.ExtratoSaldo();
 Console.WriteLine();
+minhaConta.DepositMoney(100);
+Console.WriteLine();
+minhaConta.sacar(2100);
+Console.WriteLine();
+minhaConta.ExtratoSaldo();
+
+
 
 
 

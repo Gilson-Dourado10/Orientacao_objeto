@@ -66,7 +66,7 @@ public class MinhaConta
     }
     public void sacar(double valor)
     {
-        if (_saldo < valor )
+        if (_saldo >= valor )
         {
            Console.WriteLine($"Saque no valor: {valor}"); 
         }
