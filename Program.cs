@@ -37,6 +37,8 @@
 
 using Orientacao_objetos;
 var minhaConta = new MinhaConta(2000);
+minhaConta.ExtratoSaldo();
+Console.WriteLine();
 
 
 
