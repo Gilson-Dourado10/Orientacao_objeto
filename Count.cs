@@ -61,24 +61,25 @@ public class MinhaConta
     public void DepositMoney(double valor)
     {
        _saldo += valor; 
-           Console.WriteLine($"Valor depositado:  {valor}"); 
+           Console.WriteLine($"Valor depositado:  {valor}. Novo saldo: {_saldo}"); 
 
     }
     public void sacar(double valor)
     {
-        if (_saldo >= valor )
+        if ( valor > _saldo )
         {
-           Console.WriteLine($"Saque no valor: {valor}"); 
+           Console.WriteLine($"Saldo insuficiente."); 
         }
         else
         {
-           Console.WriteLine($"Saque não autorizado no valor: {valor}"); 
+            _saldo-= valor;
+           Console.WriteLine($"Saque realizado: {valor}. Novo saldo: {_saldo}"); 
             
         }
     }
     public void ExtratoSaldo()
     {
-           Console.WriteLine($"Saldo atual no valor: {_saldo}"); 
+           Console.WriteLine($"Saldo atual: {_saldo}"); 
 
     }
 }
