@@ -1,76 +1,51 @@
-//conceito de abstração e encapsulamento
+//                      set private    
+
+//  using Orientacao_objetos;
+//  Console.Clear();
+// Futebol jogo = new Futebol("Palmeiras");
+// Console.WriteLine($"Time de futebol: {jogo.Time}");
+// // tentando alterar o nome do time fora da clase, vai dar erro de compilaçao. 
+// //jogo.Time = "Corithians";
+// jogo.AlterarNomeTime("São Paulo");
+// Console .WriteLine($"Novo time de futebol : {jogo.Time}");
+
+//*****************************************************************************************************
+//get private
+
 // using Orientacao_objetos;
 // Console.Clear();
-// Posto carro1 = new Posto("Geraldo");
-// carro1.Modelo = "Corsa hatch";
-// carro1.Tanque = 45;
-// carro1.Abastecer(90); 
-// Console.WriteLine("Litros de combustível: "+ carro1.Tanque);
-
-// Posto carro2 = new Posto("Antônio");
-// carro2.Modelo = "Celta";
-// carro2.Tanque = 40;
-// carro2.Abastecer(20);
-// Console.WriteLine("Litros combustível: "+ carro2.Tanque);
-
-// Console.Write("quantidades veículos abastecidos: ");
-// Console.WriteLine(Posto.VeiculosAbastecidos);
+// Futeboll futeboll = new Futeboll();
+// futeboll.DefinirTime("Coritiba");
+// Console.WriteLine($"Time de futebol: {futeboll.ObterTime()}");  
+// var novoTime = futeboll.Time = "Santos";                 
+// Console.WriteLine($"Time novo: {novoTime}");
+// Console.WriteLine();
 //*******************************************************************************************
 
+//             //get private
 // using Orientacao_objetos;
 // Console.Clear();
-// CarroAutoEscola voyage = new CarroAutoEscola("Pedro Antõnio", "Fernado Fernades");
-// Console.WriteLine($"Proprietario: {voyage.Proprietario}");
-// Console.WriteLine($"Aluno: {voyage.Aluno}");
-// double rodas = voyage.Rodas();
-// Console.WriteLine($"Quatro rodas: {rodas}");
-// Console.WriteLine($"Tem Airbag: {voyage.Airbag}");
-// Console.WriteLine($"tem motor: {voyage.Motor}");
-//*********************************************************************
-// using Orientacao_objetos;
-// Console.Clear();
-// Carreta carreta = new Carreta("João Guilherme");
-// Console.WriteLine($"Proprietario: {carreta.Proprietario}");
-// double rodas = carreta.Rodas();
-// Console.WriteLine($"Tem Rodas: {rodas}");
-// Console.WriteLine($"Tem Airbag: {carreta.Airbag}");
-// Console.WriteLine($"tem motor: {carreta.Motor}");
-// Console.WriteLine($"tem Carroceria: {carreta.Carroceria}");
-//******************************************************************************
-// using Orientacao_objetos;
-// Console.Clear();
+// var football = new Football("Real Madrid");
+// var timeInicioPartida = football.PegarTime();
+// Console.WriteLine($"Time que inicia a partida: {timeInicioPartida}");
+// var timeInicioPartida2 = football.Time = "Barcelona";
+// Console.WriteLine($"Novo time que inicia a partida: {timeInicioPartida2}");
+// Console.WriteLine();
 
-// Onibus onibus = new Onibus("Cesar Calvante de Morais");
-// onibus.NomeEmpresa = "Viação Guarará";
-// Console.WriteLine($"Nome da empresa: {onibus.NomeEmpresa}");
-// Console.WriteLine($"Proprietario: {onibus.Proprietario}");
-// onibus.Motorista = "Geraldo majela";
-// Console.WriteLine($"Motorista do ônibus: {onibus.Motorista}");
+//*****************************************************************************************
+            // GET PRIVATE E  SET PRIVATE 
 
-// double rodas = onibus.Rodas();
-// Console.WriteLine($"Rodas: {rodas}");
-// Console.WriteLine($"Tem Airbag: {onibus.Airbag}");
-// int  quantidadePassageiros = onibus.QuantidadePassageiro(45);
-// Console.WriteLine($"Quantidade Passageiros: {quantidadePassageiros}");
-
-//***********************************************************************************
 using Orientacao_objetos;
 Console.Clear();
-Moto moto = new Moto("Jair Almeida");
-Console.WriteLine($"Proprietário moto: " + moto.ObterProprietario());
-moto.Tanque = 18;
-Console.WriteLine($"Tanque moto: " + moto.Tanque);
-moto.Abastecer(30);
-Console.WriteLine($"Abastecer moto: " + moto.ObterQuantidadeCombustivel());
-moto.Modelo = "Kavazaki Ninja ";
-Console.WriteLine($"Modelo moto: " + moto.Modelo);
-int veiculosAbastecidos = Posto.VeiculosAbastecidos;
-Console.WriteLine($"Veiculos abastecidos: " + veiculosAbastecidos);
+var minhaConta = new MinhaConta(2000);
+minhaConta.ExtratoSaldo();
+Console.WriteLine();
+minhaConta.DepositMoney(100);
+Console.WriteLine();
+minhaConta.sacar(2100);
+Console.WriteLine();
+minhaConta.ExtratoSaldo();
 
-
-
-
-//***********************************************
 
 
 
