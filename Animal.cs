@@ -5,5 +5,5 @@ namespace Orientacao_objetos;
     {
         public void Andar(string nomeAnimal){}
         public void Andar(string nomeAnimal , DateTime diaDoNascimento){}
-        
+        public void Andar(string nomeAnimal, DateTime diaDoNascimento, string raca = "viralata"){} 
     }
