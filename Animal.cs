@@ -12,5 +12,9 @@ namespace Orientacao_objetos;
           int idade = (int)((DateTime.Now - diaDoNascimento).TotalDays / 365);  
           return $"O animal {nomeAnimal} está andando. Idade: {idade} anos.";
         }
-        public virtual void Andar(string nomeAnimal, DateTime diaDoNascimento, string raca = "viralata"){} 
+        public virtual string  Andar(string nomeAnimal, DateTime diaDoNascimento, string raca = "viralata")
+        {
+            int idade = (int)((DateTime.Now - diaDoNascimento).TotalDays / 365);  
+          return $"O animal {nomeAnimal} está andando. Idade: {idade} anos. Raça: {raca}";
+        } 
     }
