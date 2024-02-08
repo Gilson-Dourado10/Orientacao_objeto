@@ -17,6 +17,13 @@ namespace Orientacao_objetos;
 
     public override string Andar(string nomeAnimal, DateTime diaDoNascimento, string raca = "viralata")
     {
-        return base.Andar(nomeAnimal, diaDoNascimento, raca) + " é um  Cachorro";
+        if (raca != "viralata")
+        {
+            return base.Andar(nomeAnimal, diaDoNascimento, raca) + " é um  Cachorro  ";
+        }
+        else
+        {
+            return base.Andar(nomeAnimal, diaDoNascimento, raca);
+        }
     }
 }
