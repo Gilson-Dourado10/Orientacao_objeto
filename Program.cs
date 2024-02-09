@@ -1,8 +1,10 @@
 using Orientacao_objetos;
 Console.Clear();
 var cachorro = new Cachorro();
+var donoAnimal = cachorro.DonoDoAnimal = "PetShop";
 string mensagemCachorro1 = cachorro.Andar("Mell");
-Console.WriteLine($"(1°)  {mensagemCachorro1}");
+Console.WriteLine($" o dono do animal: {donoAnimal}");
+Console.WriteLine($"(1°) {mensagemCachorro1}");
 
 Console.WriteLine();
 
@@ -13,5 +15,6 @@ Console.WriteLine($"(2°)  {mensagemCachorro2}");
 Console.WriteLine();
 
 DateTime dataNascimentoCachorro3 = new DateTime(2015,05,05);
-string mensagemCachorro3 = cachorro.Andar("Sonolento" ,dataNascimentoCachorro3, raca:"Viralata");
+string mensagemCachorro3 = cachorro.Andar("Soneca" ,dataNascimentoCachorro3, raca:"Viralata");
 Console.WriteLine($"(3°)  {mensagemCachorro3}");
+Console.WriteLine();
