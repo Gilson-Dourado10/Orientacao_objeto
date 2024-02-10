@@ -1,12 +1,15 @@
 
 
 
-using System.Reflection.Metadata.Ecma335;
 
 namespace Orientacao_objetos;
 
     public class Cachorro : Animal
     {
+        public Cachorro()
+        {
+            Console.WriteLine("Construtor na classe Cachorro.");
+        }
         public string DonoDoAnimal { get; set; }
     public override string Andar(string nomeAnimal)
     {

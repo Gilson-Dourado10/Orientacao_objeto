@@ -20,13 +20,13 @@ Console.WriteLine();
 // Console.WriteLine();
 
 // Instanciando um objeto Cachorro
-            var cachorroo = new Cachorro();
+            // var cachorroo = new Cachorro();
 
             // Data de nascimento do cachorro
             DateTime dataNascimentoCachorro = new DateTime(2015, 5, 5);
 
             // Chamando o método Andar do cachorro
-            string mensagemCachorro = cachorroo.Andar("Soneca", dataNascimentoCachorro, raca: "Poodle");
+            string mensagemCachorro3 = cachorro.Andar("Soneca", dataNascimentoCachorro, raca: "Poodle");
 
             // Exibindo a mensagem no console
-            Console.WriteLine($"(3°)  {mensagemCachorro}");
+            Console.WriteLine($"(3°)  {mensagemCachorro3}");

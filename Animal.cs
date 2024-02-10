@@ -3,6 +3,10 @@ namespace Orientacao_objetos;
 
     public class Animal
     {
+      public Animal()
+      {
+        Console.WriteLine("Construtor da classe animal");
+      }
         public virtual string Andar(string nomeAnimal)
         {
             return $"O animal {nomeAnimal} está andando";
