@@ -14,7 +14,19 @@ Console.WriteLine($"(2°)  {mensagemCachorro2}");
 
 Console.WriteLine();
 
-DateTime dataNascimentoCachorro3 = new DateTime(2015,05,05);
-string mensagemCachorro3 = cachorro.Andar("Soneca" ,dataNascimentoCachorro3, raca:"Viralata");
-Console.WriteLine($"(3°)  {mensagemCachorro3}");
-Console.WriteLine();
+// DateTime dataNascimentoCachorro3 = new DateTime(2015,05,05);
+// string mensagemCachorro3 = cachorro.Andar("Soneca" ,dataNascimentoCachorro3, raca:"Poodle");
+// Console.WriteLine($"(3°)  {mensagemCachorro3}");
+// Console.WriteLine();
+
+// Instanciando um objeto Cachorro
+            var cachorroo = new Cachorro();
+
+            // Data de nascimento do cachorro
+            DateTime dataNascimentoCachorro = new DateTime(2015, 5, 5);
+
+            // Chamando o método Andar do cachorro
+            string mensagemCachorro = cachorroo.Andar("Soneca", dataNascimentoCachorro, raca: "Poodle");
+
+            // Exibindo a mensagem no console
+            Console.WriteLine($"(3°)  {mensagemCachorro}");

@@ -17,7 +17,7 @@ namespace Orientacao_objetos;
         return base.Andar(nomeAnimal, diaDoNascimento) + " é um  Cachorro";
     }
 
-    public override string Andar(string nomeAnimal, DateTime diaDoNascimento, string raca = "poodle")
+    public override string Andar(string nomeAnimal, DateTime diaDoNascimento, string raca = " " )
     {
         // if (raca != "viralata")
         // {
@@ -29,6 +29,11 @@ namespace Orientacao_objetos;
         // }
 
         // condição ? expressão1_se_true : expressão2_se_false
-        return raca != "viralata" ?  base.Andar(nomeAnimal, diaDoNascimento, raca) + ($"{raca}") : base.Andar(nomeAnimal, diaDoNascimento, raca);
+       
+        
+        //return raca != "viralata" ?  base.Andar(nomeAnimal, diaDoNascimento, raca) + ($"{raca}") : base.Andar(nomeAnimal, diaDoNascimento, raca);
+        string mensagem = base.Andar(nomeAnimal, diaDoNascimento, raca);
+    
+    return raca != "viralata" ? mensagem : mensagem;
     }
 }
