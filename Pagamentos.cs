@@ -7,9 +7,10 @@ namespace Orientacao_objetos
 {
     public class Pagamentos
     {
-        public Pagamentos()
+        public DateTime Vencimento { get; set; }
+        public Pagamentos(DateTime vencimento)
         {
-            
+          Vencimento = vencimento;  
         }
     }
 }
