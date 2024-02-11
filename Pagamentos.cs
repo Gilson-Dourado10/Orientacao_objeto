@@ -12,5 +12,9 @@ namespace Orientacao_objetos
         {
           Vencimento = vencimento;  
         }
+        public virtual void Pagar()
+        {
+            Console.WriteLine("Pagamento efetuado.");
+        }
     }
 }
