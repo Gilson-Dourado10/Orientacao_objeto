@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -9,11 +10,12 @@ namespace Orientacao_objetos
     {
         public PagarCartao(DateTime dataPagamento) :base(dataPagamento)
         {
-            dataPagamento = dataPagamento;
+            DataPagamento = dataPagamento;
         }
-        public PagarCartao()
+        public DateTime DataPagamento(get; set; ){}
+        public override void Pagar()
         {
-            
+            Console.WriteLine($"pagamento com cartão efetuado em {DataPagamento}");
         }
     }
 }
