@@ -15,7 +15,7 @@ namespace Orientacao_objetos
         public DateTime DataPagamento{get; set; }
         public override void Pagar()
         {
-            Console.WriteLine($"pagamento com cartão efetuado em {DataPagamento}");
+            Console.WriteLine($"pagamento com cartão efetuado em {DataPagamento.ToString("dd/MM/yyyy")}");
         }
     }
 }
