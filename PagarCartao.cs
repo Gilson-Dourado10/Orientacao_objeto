@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Orientacao_objetos
 {
-    public class PagarCartao
+    public class PagarCartao : Pagamentos
     {
         public PagarCartao()
         {
