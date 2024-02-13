@@ -7,6 +7,10 @@ namespace Orientacao_objetos
 {
     public class PagarCartao : Pagamentos
     {
+        public PagarCartao(DateTime dataPagamento) :base(dataPagamento)
+        {
+            dataPagamento = dataPagamento;
+        }
         public PagarCartao()
         {
             
