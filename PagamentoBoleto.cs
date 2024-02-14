@@ -5,8 +5,13 @@ using System.Threading.Tasks;
 
 namespace Orientacao_objetos;
 
-    public class PagamentoBoleto : Pagamentos
+public class PagamentoBoleto : Pagamentos
+{
+    // public PagamentoBoleto(DateTime vencimento) : base(vencimento)
+    // {
+    // }
+    public PagamentoBoleto(DateTime vencimento) : base(vencimento)
     {
-
-     
+        
     }
+}
