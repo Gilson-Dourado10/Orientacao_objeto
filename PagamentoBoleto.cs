@@ -14,5 +14,9 @@ public class PagamentoBoleto : Pagamentos
         public string NomeRecebedor{get; set; }
 
     }
+        public  override void Pagar()
+    {
+        Console.WriteLine();
+    }
 }
 
