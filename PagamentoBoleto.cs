@@ -7,11 +7,8 @@ namespace Orientacao_objetos;
 
 public class PagamentoBoleto : Pagamentos
 {
-    // public PagamentoBoleto(DateTime vencimento) : base(vencimento)
-    // {
-    // }
     public PagamentoBoleto(DateTime vencimento) : base(vencimento)
     {
-        
+        public int NumeroBoleto { get; set; }
     }
 }
