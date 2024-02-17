@@ -8,10 +8,12 @@ namespace Orientacao_objetos;
 
 public class PagamentoBoleto : Pagamentos
 {
+
+    public int NumeroBoleto { get; set; }
+        public string NomeRecebedor{get; set; }
     public PagamentoBoleto(DateTime vencimento) : base(vencimento)
     {   
-        public int NumeroBoleto { get; set; }
-        public string NomeRecebedor{get; set; }
+        
 
     }
         public  override void Pagar()
