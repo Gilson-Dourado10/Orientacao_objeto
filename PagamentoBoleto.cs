@@ -19,7 +19,7 @@ public class PagamentoBoleto : Pagamentos
     }
         public  override void Pagar()
     {
-        Console.WriteLine();
+        Console.WriteLine($"pagamento do boleto número {NumeroBoleto} efetuado para {NomeRecebedor}");
     }
 }
 
