@@ -6,3 +6,5 @@ pagarCartao.Pagar();
 PagamentoBoleto pagamentoBoleto = new PagamentoBoleto(new DateTime(2023,02,02));
 pagamentoBoleto.NumeroBoleto = 123156465;
 Console.WriteLine();
+
+PagamentoBoleto pagamentoBoleto1 = new PagamentoBoleto(new DateTime(2024,06,01), 12654987422,"Manoel pereira");
