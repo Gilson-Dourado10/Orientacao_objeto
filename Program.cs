@@ -10,3 +10,4 @@ Console.WriteLine();
 PagamentoBoleto pagamentoBoleto1 = new PagamentoBoleto(new DateTime(2024,06,01), 12654987422,"Manoel pereira");
 
 pagamentoBoleto1.Pagar();
+Console.WriteLine();

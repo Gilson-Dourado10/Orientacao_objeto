@@ -11,10 +11,11 @@ public class PagamentoBoleto : Pagamentos
 
     public double NumeroBoleto { get; set; }
     public string NomeRecebedor{get; set; }
+
     public PagamentoBoleto(DateTime vencimento, double numeroBoleto, string nomeRecebedor) : base(vencimento)
     {   
         NumeroBoleto = numeroBoleto;
-        nomeRecebedor = nomeRecebedor;
+        NomeRecebedor = nomeRecebedor;
 
     }
         public  override void Pagar()
