@@ -11,3 +11,12 @@ PagamentoBoleto pagamentoBoleto1 = new PagamentoBoleto(new DateTime(2024,06,01),
 
 pagamentoBoleto1.Pagar();
 Console.WriteLine();
+PagamentoDebito pagamentoDebito = new PagamentoDebito();
+
+
+
+Console.WriteLine();
+
+
+
+

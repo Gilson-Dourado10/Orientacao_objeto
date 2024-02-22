@@ -5,9 +5,11 @@ using System.Threading.Tasks;
 
 namespace Orientacao_objetos
 {
-    public class PagamentoDebito
+    public class PagamentoDebito 
     {
         public decimal ValorPago{get ; set;}
         public string NomeCliente{get; set; }
     }
+
+    
 }
