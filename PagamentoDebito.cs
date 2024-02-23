@@ -8,7 +8,7 @@ namespace Orientacao_objetos
     public class PagamentoDebito : Pagamentos
     
     {
-        public PagamentoDebito(DateTime vencimento) : base(vencimento)
+        public PagamentoDebito(DateTime vencimento, decimal valorPago, string nomeCliiente) : base(vencimento)
         {
         }
 

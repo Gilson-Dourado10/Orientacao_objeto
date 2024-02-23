@@ -11,7 +11,7 @@ PagamentoBoleto pagamentoBoleto1 = new PagamentoBoleto(new DateTime(2024,06,01),
 
 pagamentoBoleto1.Pagar();
 Console.WriteLine();
-PagamentoDebito pagamentoDebito = new PagamentoDebito();
+PagamentoDebito pagamentoDebito = new PagamentoDebito(new DateTime(2024,06,01), 89856487422,"pedro pereira");
 var nomeCliente = pagamentoDebito.NomeCliente = "João";
 var valorPago=  pagamentoDebito.ValorPago = 300;
 Console.WriteLine($"nome cliente {nomeCliente }");
