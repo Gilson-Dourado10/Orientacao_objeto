@@ -15,6 +15,10 @@ namespace Orientacao_objetos
         public decimal ValorPago{get ; set;}
         public string NomeCliente{get; set; }
     }
+    
+            public bool ClienteAtivo()
+            {
 
+            }
     
 }
