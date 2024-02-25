@@ -1,53 +1,23 @@
-//                      set private    
-
-//  using Orientacao_objetos;
-//  Console.Clear();
-// Futebol jogo = new Futebol("Palmeiras");
-// Console.WriteLine($"Time de futebol: {jogo.Time}");
-// // tentando alterar o nome do time fora da clase, vai dar erro de compilaçao. 
-// //jogo.Time = "Corithians";
-// jogo.AlterarNomeTime("São Paulo");
-// Console .WriteLine($"Novo time de futebol : {jogo.Time}");
-
-//*****************************************************************************************************
-//get private
-
-// using Orientacao_objetos;
-// Console.Clear();
-// Futeboll futeboll = new Futeboll();
-// futeboll.DefinirTime("Coritiba");
-// Console.WriteLine($"Time de futebol: {futeboll.ObterTime()}");  
-// var novoTime = futeboll.Time = "Santos";                 
-// Console.WriteLine($"Time novo: {novoTime}");
-// Console.WriteLine();
-//*******************************************************************************************
-
-//             //get private
-// using Orientacao_objetos;
-// Console.Clear();
-// var football = new Football("Real Madrid");
-// var timeInicioPartida = football.PegarTime();
-// Console.WriteLine($"Time que inicia a partida: {timeInicioPartida}");
-// var timeInicioPartida2 = football.Time = "Barcelona";
-// Console.WriteLine($"Novo time que inicia a partida: {timeInicioPartida2}");
-// Console.WriteLine();
-
-//*****************************************************************************************
-            // GET PRIVATE E  SET PRIVATE 
-
 using Orientacao_objetos;
-Console.Clear();
-var minhaConta = new MinhaConta(2000);
-minhaConta.ExtratoSaldo();
-Console.WriteLine();
-minhaConta.DepositMoney(100);
-Console.WriteLine();
-minhaConta.sacar(2100);
-Console.WriteLine();
-minhaConta.ExtratoSaldo();
 
+PagarCartao pagarCartao = new PagarCartao(new DateTime(2024,2,13));
+pagarCartao.Pagar();
 
+PagamentoBoleto pagamentoBoleto = new PagamentoBoleto(new DateTime(2023,02,02),1265498742552,"Manoel pereira");
+pagamentoBoleto.NumeroBoleto = 123156465;
+Console.WriteLine();
 
+PagamentoBoleto pagamentoBoleto1 = new PagamentoBoleto(new DateTime(2024,06,01), 12654987422,"Manoel pereira");
+
+pagamentoBoleto1.Pagar();
+Console.WriteLine();
+PagamentoDebito pagamentoDebito = new PagamentoDebito(new DateTime(2024,06,01), 89856487422,"pedro pereira");
+var nomeCliente = pagamentoDebito.NomeCliente = "João";
+var valorPago=  pagamentoDebito.ValorPago = 300;
+Console.WriteLine($"nome cliente {nomeCliente }");
+Console.WriteLine($"valor pago débito {valorPago}");
+
+Console.WriteLine();
 
 
 
