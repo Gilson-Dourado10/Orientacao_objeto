@@ -17,7 +17,7 @@ public class PagamentoDebito : Pagamentos
 
     public override void Pagar()
     {
-        Console.WriteLine("");
+        Console.WriteLine($"O cliente {NomeCliente} pagou o valor de {ValorPago }");
     }
 
 }
