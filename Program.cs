@@ -16,7 +16,7 @@ var nomeCliente = pagamentoDebito.NomeCliente = "João";
 var valorPago=  pagamentoDebito.ValorPago = 300;
 Console.WriteLine($"nome cliente {nomeCliente }");
 Console.WriteLine($"valor pago débito {valorPago}");
-
+pagamentoDebito.Pagar();
 Console.WriteLine();
 
 
