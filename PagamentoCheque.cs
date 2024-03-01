@@ -6,6 +6,7 @@ namespace Orientacao_objetos;
     {
        public string Remetente { get; set; } 
        public bool ChequeValido{get ; set; }
+       public decimal ValorMinimoCheque{get; set;}
 
        public void LimitePagamentoCheque()
        {
