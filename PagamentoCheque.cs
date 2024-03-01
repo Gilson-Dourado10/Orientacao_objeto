@@ -9,7 +9,7 @@ namespace Orientacao_objetos;
 
        public void LimitePagamentoCheque()
        {
-         
+         Console.WriteLine($"pagamento cheque é válido {ChequeValido}");
        }
     }
 
