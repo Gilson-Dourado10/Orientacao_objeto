@@ -20,6 +20,9 @@ pagamentoDebito.Pagar();
 Console.WriteLine();
 PagamentoCheque pagamentoCheque = new PagamentoCheque();
 var remetente = pagamentoCheque.Remetente = "Pedro Gonçalves";
+Console.WriteLine($"remetente: {remetente}");
+var valorMinimoCheque = pagamentoCheque.ValorMinimoCheque = 100.00m;
+Console.WriteLine($"o valor mínimo de cheque a receber: {valorMinimoCheque}");
 
 
 
