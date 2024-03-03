@@ -18,6 +18,8 @@ Console.WriteLine($"nome cliente {nomeCliente }");
 Console.WriteLine($"valor pago débito {valorPago}");
 pagamentoDebito.Pagar();
 Console.WriteLine();
+PagamentoCheque pagamentoCheque = new PagamentoCheque();
+var remetente = pagamentoCheque.Remetente = "Pedro Gonçalves";
 
 
 
