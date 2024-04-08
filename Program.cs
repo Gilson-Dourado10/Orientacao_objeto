@@ -5,6 +5,7 @@ pagarCartao.Pagar();
 
 PagamentoBoleto pagamentoBoleto = new PagamentoBoleto(new DateTime(2023,02,02),1265498742552,"Manoel pereira");
 pagamentoBoleto.NumeroBoleto = 123156465;
+pagamentoBoleto.DataVencimento= "25/03/2024"
 Console.WriteLine();
 
 PagamentoBoleto pagamentoBoleto1 = new PagamentoBoleto(new DateTime(2024,06,01), 12654987422,"Manoel pereira");
